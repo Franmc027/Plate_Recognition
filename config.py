@@ -5,7 +5,7 @@ Descripción:
 """
 
 TOKEN = 'YOUR_TOKEN_HERE'
-# GENERAL CONSTANTS THAT MAY BE UPDATED IN THE FUTURE BY OPENALPR
+# General constants 
 OPENALPR_CLOUD_API_URL = 'https://api.openalpr.com/v2/recognize?recognize_vehicle=1&country=eu'
 OPENALPR_RESULTS = 'results'
 OPENALPR_CANDIDATES = 'candidates'
@@ -14,7 +14,7 @@ OPENALPR_MAKE = 'make'
 OPENALPR_MAKE_MODEL = 'make_model'
 OPENALPR_COLOR = 'color'
 
-
+# Function to get the image results
 def analyse_results(results):
     plate = results[OPENALPR_RESULTS][0][OPENALPR_CANDIDATES][0]['plate']
     brand = results[OPENALPR_RESULTS][0][OPENALPR_VEHICLE][OPENALPR_MAKE][0]['name']
