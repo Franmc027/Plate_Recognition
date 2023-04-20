@@ -4,7 +4,7 @@ Fecha:
 Descripción: 
 """
 
-TOKEN = 'sk_b3d97bf38c2eb0081d6666eb'
+TOKEN = 'YOUR_TOKEN_HERE'
 # GENERAL CONSTANTS THAT MAY BE UPDATED IN THE FUTURE BY OPENALPR
 OPENALPR_CLOUD_API_URL = 'https://api.openalpr.com/v2/recognize?recognize_vehicle=1&country=eu'
 OPENALPR_RESULTS = 'results'
