@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static',filename='assets/css/main.css') }}">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Formulario con Flask</title>
+    </head>
+    <body>
+    <header>
+		<h1>Detector de matrículas</h1>
+	</header>
+    <main>
+        <p>Selecciona una imagen de un coche para sacar la información</p>
+        <form  action="{{url_for('process')}}"  enctype="multipart/form-data" method="POST">
+
+		  		<input type="file" class="button button3" name="img">
+				<br>
+                <input type="submit"  class="button button4" value="Enviar">
+
+
+        </form>
+        </main>
+    </body>
+</html>
