@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, abort
+from flask import Flask, render_template, request
 import config as cf
 from werkzeug.utils import secure_filename
 import os
