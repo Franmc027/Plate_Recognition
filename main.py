@@ -1,10 +1,11 @@
-import config
 from flask import Flask, render_template, request, abort
 import config as cf
 from werkzeug.utils import secure_filename
 import os
 import requests
 
+# Where you will save the images from form
+LOCAL_FOLDER = 'C:\\Users\\losfr\\PycharmProjects\\Matriculas\\static\\cars'
 
 app = Flask(__name__)
 
@@ -19,7 +20,7 @@ def process():
     # Save img in /static/cars folder
     file = request.files['img']
     filename = secure_filename(file.filename)
-    path = 'C:\\Users\\losfr\\PycharmProjects\\Matriculas\\static\\cars'
+    path = LOCAL_FOLDER
     file.save(os.path.join(path, filename))
 
     img = path + '\\' + filename
