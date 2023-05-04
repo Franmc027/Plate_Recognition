@@ -14,6 +14,8 @@
 
 #### Intall requirements.txt ```pip install -r requirements.txt```
 
+#### Go to config.py file and put your token to be able to use (Openalpr)[https://www.openalpr.com/] api
+
 #### Run aplication
 
 #### Upload an image of a car 
